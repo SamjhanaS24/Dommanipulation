@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 3</title>
+</head>
+<body>
+    <script>
+  // 1. The parent object
+  var animal = {
+    makeSound: function() {
+      return "Some sound";
+    }
+  };
+
+  // 2. The child object
+  var dog = {
+    name: "Buddy"
+  };
+
+  // 3. Link the child to the parent
+  dog.__proto__ = animal;
+
+  // 4. Log the result to the console
+  console.log(dog.makeSound());
+</script>
+
+</body>
+</html>
