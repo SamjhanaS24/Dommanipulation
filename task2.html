@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2</title>
+</head>
+<body>
+    <form id="myForm">
+  <label>Text color:</label>
+  <input type="text" id="textColor" placeholder="red or #ff0000"><br><br>
+
+  <label>Background color:</label>
+  <input type="text" id="bgColor" placeholder="white or #ffffff"><br><br>
+
+  <label>Text content:</label>
+  <input type="text" id="content" placeholder="Hello, World!"><br><br>
+
+  <button type="submit">Show Text</button>
+</form>
+<div id="output"></div>
+<script>
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var textColor = document.getElementById("textColor").value;
+    var bgColor = document.getElementById("bgColor").value;
+    var content = document.getElementById("content").value;
+
+    var output = document.getElementById("output");
+    output.innerText = content;
+    output.style.color = textColor;
+    output.style.backgroundColor = bgColor;
+  });
+</script>
+
+</body>
+</html>
