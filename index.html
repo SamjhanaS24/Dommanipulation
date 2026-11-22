@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watch me grow</title>
+</head>
+<body>
+    <h1 id="heading">Watch me grow!</h1>
+
+<input type="number" id="sizeBox" placeholder="Enter a number">
+
+<button onclick="changeSize()">Change Font Size</button>
+<script>
+  function changeSize() {
+    var number = document.getElementById("sizeBox").value;
+    document.getElementById("heading").style.fontSize = number + "px";
+  }
+</script>
+
+</body>
+</html>
